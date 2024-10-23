@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Colour Flipper </title>
+    <style>
+        h2 {
+            margin-top: 50px;
+            margin-left: 50px;
+            text-align: left;
+        }
+        #red {
+            background-color: red;
+        }
+
+        #purple {
+            background-color: purple;
+        }
+
+        #brown {
+            background-color: brown;
+        }
+
+        #blue {
+            background-color: lightblue;
+        }
+
+        button {
+            border-radius:  5px;
+            border-style: none;
+            width: 100px;
+            height: 40px;
+            margin: 5px;
+            margin-top: 30px;
+            margin-left: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 30%;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h2> Change Colours with SadCat! </h2>
+
+    <button id="red" onclick="setColor('red')"> Red </button>
+    <button id="purple" onclick="setColor('purple')"> Purple </button>
+    <button id="brown" onclick="setColor('brown')"> Brown </button>
+    <button id="blue" onclick="setColor('lightblue')"> Blue </button>
+    <button id="random" onclick="randomColor()"> Random </button>
+
+    <img src="sadcat.gif">
+
+    <script src="index.js"></script>
+</body>
+</html>
